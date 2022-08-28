@@ -1,0 +1,124 @@
+MACRO ASSEMBLER LIGHT                                      12/22/110 02:28:47 PAGE     1
+
+
+WIN16 MACRO ASSEMBLER A51 V6.03.08
+OBJECT MODULE PLACED IN F:\RIZPAR~1\LIGHT.OBJ
+ASSEMBLER INVOKED BY: A51.EXE F:\RIZPAR~1\LIGHT.A51 OJ(F:\RIZPAR~1\LIGHT.OBJ) PIN(C:\FSI\INC) EP LINES XR DB PL(60) PW(80) RB(0) 
+
+LOC     OBJ           LINE    SOURCE
+  0000                   1    ORG 0000H
+                         2    LABLE1:     
+                         3      	
+0000    E590             4       	MOV A,P1
+0002    540F             5     	ANL A,#00001111B
+0004    B40003           6    	CJNE A,#0,N1
+0007    75A000           7     	MOV P2,#0000B
+                         8     	
+000A    B40106           9    N1:     	CJNE A,#1,N2
+000D    75A001          10            MOV P2,#0001B    
+0010    75B00C          11            MOV P3,#00001100B
+                        12                    
+0013    B40206          13    N2:    	CJNE A,#2,N3
+0016    75A002          14         	MOV P2,#0010B
+0019    75B00C          15         	MOV P3,#00001100B
+                        16        	
+001C    B40306          17    N3:     	CJNE A,#3,N4
+001F    75A003          18           	MOV P2,#0011B
+0022    75B00C          19           	MOV P3,#00001100B
+                        20           	
+0025    B40406          21    N4:     	CJNE A,#4,N5
+0028    75A004          22          	MOV P2,#0100B
+002B    75B00C          23          	MOV P3,#00001100B   
+                        24          	          	
+002E    B40506          25    N5:     	CJNE A,#5,N6
+0031    75A005          26         	MOV P2,#0101B
+0034    75B00C          27         	MOV P3,#00001100B
+                        28         	
+0037    B40606          29    N6:     	CJNE A,#6,N7
+003A    75A006          30         	MOV P2,#0110B
+003D    75B00C          31         	MOV P3,#00001100B
+                        32         	
+0040    B40706          33    N7:     	CJNE A,#7,N8
+0043    75A007          34    	MOV P2,#0111B
+0046    75B00C          35    	MOV P3,#00001100B
+                        36    	
+0049    B40806          37    N8:     	CJNE A,#8,N9
+004C    75A008          38      	MOV P2,#1000B
+004F    75B014          39      	MOV P3,#00010100B    	
+                        40      	
+0052    B40906          41    N9:     	CJNE A,#9,N10
+0055    75A009          42    	MOV P2,#1001B
+0058    75B021          43    	MOV P3,#00100001B
+                        44    	
+005B    B40A06          45    N10:     	CJNE A,#10,N11
+005E    75A00A          46         	MOV P2,#1010B
+0061    75B021          47         	MOV P3,#00100001B
+                        48         	
+0064    B40B1E          49    N11:     	CJNE A,#11,N16
+0067    75A00B          50           	MOV P2,#1011B
+                        51           	MOV P3,#00100010B
+MACRO ASSEMBLER LIGHT                            12/22/110 02:28:47 PAGE     2
+006A    75B022       
+                        52           	
+006D    B40C03          53    N12:     	CJNE A,#12,N13
+0070    75A00C          54        	MOV P2,#1100B
+                        55        	
+0073    B40D03          56    N13:     	CJNE A,#13,N14
+0076    75A00D          57        	MOV P2,#1101B
+                        58        	
+0079    B40E03          59    N14:     	CJNE A,#14,N15
+007C    75B000          60        	MOV P3,#00000000B
+                        61            	
+007F    B40F03          62    N15:     	CJNE A,#15,N16
+0082    75A00F          63         	MOV P2,#1111B
+                        64       	
+0085    0100            65    N16:     	JMP LABLE1
+                        66    END 
+MACRO ASSEMBLER LIGHT                                      12/22/110 02:28:47 PAGE     3
+
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES             REFERENCES
+
+N2 . . . . . . . .  C ADDR   0013H   A                          9 13# 
+N3 . . . . . . . .  C ADDR   001CH   A                          13 17# 
+P1 . . . . . . . .  D ADDR   0090H   A                          4 
+N4 . . . . . . . .  C ADDR   0025H   A                          17 21# 
+P2 . . . . . . . .  D ADDR   00A0H   A                          7 10 14 18 22 26 
+                                                                30 34 38 42 46 50 
+                                                                54 57 63 
+N5 . . . . . . . .  C ADDR   002EH   A                          21 25# 
+P3 . . . . . . . .  D ADDR   00B0H   A                          11 15 19 23 27 31 
+                                                                35 39 43 47 51 60 
+                                                                
+N6 . . . . . . . .  C ADDR   0037H   A                          25 29# 
+N7 . . . . . . . .  C ADDR   0040H   A                          29 33# 
+N8 . . . . . . . .  C ADDR   0049H   A                          33 37# 
+N9 . . . . . . . .  C ADDR   0052H   A                          37 41# 
+N10. . . . . . . .  C ADDR   005BH   A                          41 45# 
+N11. . . . . . . .  C ADDR   0064H   A                          45 49# 
+N12. . . . . . . .  C ADDR   006DH   A                          53# 
+LABLE1 . . . . . .  C ADDR   0000H   A                          2# 65 
+N13. . . . . . . .  C ADDR   0073H   A                          53 56# 
+N14. . . . . . . .  C ADDR   0079H   A                          56 59# 
+N15. . . . . . . .  C ADDR   007FH   A                          59 62# 
+N16. . . . . . . .  C ADDR   0085H   A                          49 62 65# 
+N1 . . . . . . . .  C ADDR   000AH   A                          6 9# 
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    135    ----
+   XDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+REGISTER BANK(S) USED : 0 
+
+ASSEMBLY COMPLETE.   0 WARNING(S)   0 ERROR(S)

@@ -1,0 +1,109 @@
+L51 CODE BANKING LINKER/LOCATOR V4.08.06        12/22/110  02:28:47  PAGE  1
+WIN16 L51 CODE BANKING LINKER/LOCATOR V4.08.06,  INVOKED BY:
+L51.EXE LIGHT.OBJ  to  LIGHT.ABS PL(60) PW(80) RS(128) ix 
+
+
+INPUT MODULES INCLUDED
+  LIGHT.OBJ(LIGHT)
+
+
+LINK MAP OF MODULE: LIGHT.ABS (LIGHT)
+
+    TYPE     BASE       LENGTH    RELOCATION     SEGMENT NAME
+    ----     ----       ------    ----------     ------------
+
+    * * * * * * *   DATA          M E M O R Y   * * * * * * *
+    REG      0000H      0008H     ABSOLUTE       "REG BANK 0"
+
+    * * * * * * *   CODE          M E M O R Y   * * * * * * *
+    CODE     0000H      0087H     ABSOLUTE       
+
+EXECUTABLE SUMMARY:
+-------------------
+    Total INTERNAL storage requirement:  0008H (8)
+    Total EXTERNAL storage requirement:  0000H (0)
+    Total   CODE   storage requirement:  0087H (135)
+Note:  Summary does not include dynamic stack requirements
+
+
+REFERENCE MAP OF MODULE: LIGHT.ABS (LIGHT)
+
+SEGMENT
+   +-->CALLED SEGMENT
+---------------------
+
+SYMBOL TABLE FOR LIGHT.ABS(LIGHT)
+----------------------------------
+
+    VALUE              TYPE               NAME
+    -----              ----               ----
+
+	-------            MODULE             LIGHT
+	C:0013H            SYMBOL             N2
+	C:001CH            SYMBOL             N3
+	C:0025H            SYMBOL             N4
+	C:002EH            SYMBOL             N5
+	C:0037H            SYMBOL             N6
+	C:0040H            SYMBOL             N7
+	C:0049H            SYMBOL             N8
+	C:0052H            SYMBOL             N9
+	C:005BH            SYMBOL             N10
+	C:0064H            SYMBOL             N11
+	C:006DH            SYMBOL             N12
+	C:0000H            SYMBOL             LABLE1
+	C:0073H            SYMBOL             N13
+	C:0079H            SYMBOL             N14
+	C:007FH            SYMBOL             N15
+	C:0085H            SYMBOL             N16
+	C:000AH            SYMBOL             N1
+	C:0000H            LINE#              4
+	C:0002H            LINE#              5
+	C:0004H            LINE#              6
+	C:0007H            LINE#              7
+L51 CODE BANKING LINKER/LOCATOR V4.08.06          12/22/110  02:28:47  PAGE  2
+
+	C:000AH            LINE#              9
+	C:000DH            LINE#              10
+	C:0010H            LINE#              11
+	C:0013H            LINE#              13
+	C:0016H            LINE#              14
+	C:0019H            LINE#              15
+	C:001CH            LINE#              17
+	C:001FH            LINE#              18
+	C:0022H            LINE#              19
+	C:0025H            LINE#              21
+	C:0028H            LINE#              22
+	C:002BH            LINE#              23
+	C:002EH            LINE#              25
+	C:0031H            LINE#              26
+	C:0034H            LINE#              27
+	C:0037H            LINE#              29
+	C:003AH            LINE#              30
+	C:003DH            LINE#              31
+	C:0040H            LINE#              33
+	C:0043H            LINE#              34
+	C:0046H            LINE#              35
+	C:0049H            LINE#              37
+	C:004CH            LINE#              38
+	C:004FH            LINE#              39
+	C:0052H            LINE#              41
+	C:0055H            LINE#              42
+	C:0058H            LINE#              43
+	C:005BH            LINE#              45
+	C:005EH            LINE#              46
+	C:0061H            LINE#              47
+	C:0064H            LINE#              49
+	C:0067H            LINE#              50
+	C:006AH            LINE#              51
+	C:006DH            LINE#              53
+	C:0070H            LINE#              54
+	C:0073H            LINE#              56
+	C:0076H            LINE#              57
+	C:0079H            LINE#              59
+	C:007CH            LINE#              60
+	C:007FH            LINE#              62
+	C:0082H            LINE#              63
+	C:0085H            LINE#              65
+	-------            ENDMOD             LIGHT
+
+LINK/LOCATE RUN COMPLETE,  NO ERROR FOUND.
